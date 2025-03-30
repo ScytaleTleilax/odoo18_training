@@ -12,11 +12,9 @@
     ],
 
     'data': [
+        'security/ir.model.access.csv'
         # 'security/crm_security.xml',
-        # 'security/ir.model.access.csv',
-
         # 'data/crm_lead_merge_template.xml',
-
         # 'views/calendar_views.xml',
     ],
     'installable': True,
