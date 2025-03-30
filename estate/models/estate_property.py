@@ -9,7 +9,7 @@ class EstateProperty(models.Model):
     name = fields.Char(string='Property Name', required=True)
     description = fields.Text(string='Description')
     postcode = fields.Char(string='Postcode')
-    date_availability = fields.Date(string='Date Availability', default=lamda self: self._get_default_availability_date())
+    date_availability = fields.Date(string='Date Availability', default=lambda self: self.get_default_availability_date())
     expected_price = fields.Float(string='Expected Price', required=True)
     selling_price = fields.Float(string='Selling Price')
     bedrooms = fields.Integer(string='Bedrooms', default='2')
@@ -41,5 +41,5 @@ class EstateProperty(models.Model):
         copy=False,
     )
 
-    def _get_default_availability_date(self):
+    def get_default_availability_date(self):
         return datetime.today() + timedelta(months=3)
