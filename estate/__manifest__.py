@@ -7,13 +7,13 @@
     'website': 'https://github.com/ScytaleTleilax/odoo18_training',
 
     'depends': [
-        'base',
-        'base_setup',
+        'base'
     ],
 
     'data': [
         'security/ir.model.access.csv',
         'views/estate_property_views.xml',
+        'views/estate_property_actions.xml',
         'views/estate_menus.xml',
     ],
     'installable': True,

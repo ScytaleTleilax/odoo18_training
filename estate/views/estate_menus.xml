@@ -1,6 +1,6 @@
 <odoo>
-    <menuitem id="estate_management_root_menu" name="Estate Management">
-        <menuitem id="estate_management_first_level_menu" name="App Menu">
+    <menuitem id="estate.estate_management_root_menu" name="Real Estate">
+        <menuitem id="estate_management_first_level_menu" name="Advertisments">
             <menuitem id="test_model_menu_action" action="estate_property_action"/>
         </menuitem>
     </menuitem>
